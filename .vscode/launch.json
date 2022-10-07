@@ -9,7 +9,7 @@
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}",
-            "vmArgs": "--module-path C:/Users/timka/Desktop/javafx-sdk-18.0.2/lib --add-modules javafx.controls,javafx.fxml"
+            "vmArgs": "--module-path C:/Users/timka/Desktop/javafx-sdk-18.0.2/lib --add-modules javafx.controls,javafx.fxml --enable-preview"
         },
         {
             "type": "java",
@@ -17,7 +17,7 @@
             "request": "launch",
             "mainClass": "App",
             "projectName": "OOP_HW2_90038de3",
-            "vmArgs": "--module-path C:/Users/timka/Desktop/javafx-sdk-18.0.2/lib --add-modules javafx.controls,javafx.fxml"
+            "vmArgs": "--module-path C:/Users/timka/Desktop/javafx-sdk-18.0.2/lib --add-modules javafx.controls,javafx.fxml --enable-preview"
         }
     ]
 }
