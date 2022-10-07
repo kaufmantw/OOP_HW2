@@ -1,2 +1,3 @@
-# OOP_HW2
-Tic Tac Toe Board
+# OOP Homework 2
+Tim Kaufman
+Due midnight October 8, 2022
