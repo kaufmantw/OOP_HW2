@@ -17,9 +17,13 @@ public class Players implements cs331TicTacToePlayer{
     @Override
     public void selectSquare(int row, int col){
         (board.squareAt(row, col)).markSquare(icon);
-        control.setControllerMessage("Player " + icon + " has ended their turn.");
+        control.setControllerMessage("Player " + icon + " finished their turn.");
         control.finishedTurn();
 
+    }
+
+    public String getIcon(){
+        return this.icon;
     }
 
 

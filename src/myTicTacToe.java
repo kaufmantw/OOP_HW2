@@ -18,24 +18,29 @@ public class myTicTacToe implements cs331TicTacToeGame{
 
     @Override
     public void invalidSquareChosen(int row, int col){
-        
+        (board.squareAt(row, col)).flashColor(javafx.scene.paint.Color.RED);
+        control.setControllerMessage("Square chosen has already been taken. Try again.");
     }
 
     @Override
     public void noWinner(){
+        control.setControllerMessage("It's a tie");
 
     }
 
     @Override
     public void playerWins(){
-        board.highlightWinningSquares(javafx.scene.paint.Color.GOLD);
+        board.highlightWinningSquares(javafx.scene.paint.Color.GREEN);
+        Players winner = (Players)this.control.getWinningPlayer();
+        this.control.setControllerMessage("Player " + winner.getIcon() + " wins");
 
     }
 
     @Override
     public void restartGame(){
         this.control.setControllerMessage("Select a square to start playing!");
-        board.clearHighlights();
-        board.clearSymbols(); 
+        this.board.clearHighlights();
+        this.board.clearSymbols(); 
+        this.control.playAgain();
     }
 }
